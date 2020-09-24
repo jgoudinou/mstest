@@ -51,6 +51,8 @@ $app->get('/automobile/{brand}/models.{format}', function (Request $request, Res
     return $response;
 });
 
+//TODO Gérer un 404
+
 /*$app->get('/automobile/{brand}/{model}', function (Request $request, Response $response) {
     $brand = $args['brand'];
     $model = $args['model'];

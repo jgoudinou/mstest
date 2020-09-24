@@ -2,7 +2,7 @@
 class ModeleMapper extends Mapper
 {
     public function getAllByBrand($brand,$format) {
-        $fields="id,libelle,logo";
+        $fields="id,id_marque,libelle";
         $sql = "select mo.* 
                   from ms_modeles mo
                   join ms_marques ma on ma.id=mo.id_marque

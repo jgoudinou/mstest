@@ -13,7 +13,7 @@ abstract class Mapper {
           $s.="  <".$rootnode.">\n    "; //todo gérer le vide
           foreach($r as $k=>$v)
             $s.="<".$k."><![CDATA[".$v."]]></".$k.">";
-          $s.="\n  <".$rootnode.">\n"; //todo gérer le vide
+          $s.="\n  </".$rootnode.">\n"; //todo gérer le vide
         }
       $s.="</".$rootnode."s>\n"; //todo gérer le vide      
       return $s;    
